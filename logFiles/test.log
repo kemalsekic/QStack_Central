@@ -1,0 +1,16 @@
+03/02/2020 11:46:18 AM: DEBUG: Starting new HTTP connection (1): bmwdaylight.ridgelinemobile.net
+03/02/2020 11:50:13 AM: DEBUG: Starting new HTTPS connection (1): api.github.com
+03/02/2020 11:50:14 AM: DEBUG: https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+03/02/2020 11:50:14 AM: WARNING: The response was: 200
+03/02/2020 11:50:14 AM: DEBUG: Starting new HTTPS connection (1): reqres.in
+03/02/2020 11:50:14 AM: DEBUG: https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+03/02/2020 11:50:27 AM: DEBUG: Starting new HTTPS connection (1): api.github.com
+03/02/2020 11:50:27 AM: DEBUG: https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+03/02/2020 11:50:27 AM: WARNING: The response was: 200
+03/02/2020 11:50:27 AM: DEBUG: Starting new HTTPS connection (1): reqres.in
+03/02/2020 11:50:28 AM: DEBUG: https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
+03/02/2020 11:50:49 AM: DEBUG: Starting new HTTPS connection (1): api.github.com
+03/02/2020 11:50:49 AM: DEBUG: https://api.github.com:443 "GET /events HTTP/1.1" 200 None
+03/02/2020 11:50:49 AM: WARNING: The response was: 200
+03/02/2020 11:50:49 AM: DEBUG: Starting new HTTPS connection (1): reqres.in
+03/02/2020 11:50:50 AM: DEBUG: https://reqres.in:443 "GET /api/users?page=2 HTTP/1.1" 200 None
