@@ -1,5 +1,0 @@
-IMEI = '353340074463715'
-SKU = '89148000004271350913'
-deviceManuf = 'iPhone'
-deviceSize = '128gb'
-deviceColor = 'Gold'

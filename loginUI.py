@@ -1,16 +1,16 @@
 from tkinter import *
 from tkinter import ttk
-import apiTester
-import wordThings
-import runTests
-import D2C_UI
-import d2cDriver
-import retailUIController
+import API.apiTester as apiTester
+import Reporting.wordThings as wordThings
+import DriverManager.runTests as runTests
+import Views.D2C_UI as D2C_UI
+import DriverManager.d2cDriver as d2cDriver
+import Views.retailUIController as retailUIController
 from configparser import ConfigParser
 import os
-import sqlCon
+# import sqlCon
 
-dbCursor = sqlCon.mycursor
+# dbCursor = sqlCon.mycursor
 
 global uiSettings 
 uiSettings = ConfigParser()
@@ -51,7 +51,7 @@ def register_user(event=None):
     username_info = username.get()
     password_info = password.get()
 
-    sqlCon.register_user_to_db("Kemal", "Sekic", username_info, password_info)
+    # sqlCon.register_user_to_db("Kemal", "Sekic", username_info, password_info)
     Label(registerScreen, text="Registration Successfull!", fg="green", font=("calibri", 11)).pack()
 
 def register():
@@ -177,17 +177,17 @@ def login_verify_button():
         Label(loginScreen, text="Password is missing.", width=20, height=1).pack()
     elif username1:
         #dbCursor.execute("SELECT pID FROM Testertest WHERE pID='" + username1 + "'")
-        dbCursor.execute("SELECT pID FROM Testertest WHERE pID=%s", (username1,))
+        # dbCursor.execute("SELECT pID FROM Testertest WHERE pID=%s", (username1,))
         #record = dbCursor.fetchone()
-        for x in dbCursor:
-                print(x)
-        if password1:
+        # for x in dbCursor:
+        #         print(x)
+        # if password1:
             #dbCursor.execute("SELECT pw FROM Testertest WHERE pw='" + password1 + "'")
-            dbCursor.execute("SELECT pw FROM Testertest WHERE pw=%s", (password1,))
+            # dbCursor.execute("SELECT pw FROM Testertest WHERE pw=%s", (password1,))
             #record = dbCursor.fetchone()
             
-            for x in dbCursor:
-                print(x)
+            # for x in dbCursor:
+            #     print(x)
             #dbCursor.execute("SELECT * FROM Testertest WHERE pID=%s AND pw=%s", (username1, password1,))
 
         if username1 == checkUser and password1 == checkPass:
@@ -255,7 +255,7 @@ def add_button():
     
 def launchSite(siteName): 
     wordThings.addDetailToWord()
-    import driverConfig
+    import config.driverConfig as driverConfig
     global driver
     driver = driverConfig.Driver
     driver.get(siteName)
@@ -293,7 +293,7 @@ def logout():
 def main_screen():
     global screen
     screen = Tk()
-    login()
+    # login()
     createTab()
     screen.geometry("700x500")
     screen.title("Notes 1")
